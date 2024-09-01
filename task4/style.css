@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #343a40;
+  --background-color: #f4f4f9;
+  --text-color: #666;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--secondary-color);
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+}
+
+footer form input {
+  max-width: 300px;
+}
